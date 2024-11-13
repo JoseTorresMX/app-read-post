@@ -1,1 +1,11 @@
-<p>post works!</p>
+<div style="text-align: center;">
+    <h2>Lista de Publicaciones</h2>
+    <ul>
+        <li *ngFor="let post of posts">
+            <h3>{{post.title}}</h3>
+            <p>{{post.body}}</p>
+        </li>
+    </ul>
+</div>
+<!--Se usa ngFor para iterar sobre cada publicacion
+en la lista posts y mostrar el tittle y body.-->
